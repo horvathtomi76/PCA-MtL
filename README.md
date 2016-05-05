@@ -23,3 +23,40 @@ and can be retrieved by
 cat exp1_* | gunzip -c > experiment1.sql
 
 cat exp2_* | gunzip -c > experiment2.sql
+
+Explanations to the oclumns in the MySQL tables:
+
+1) row_names = dataset name
+
+2) dataset_id = dataset id
+
+3) acc_1, ..., acc_30 = average accuracies on cross validation resulting from the 30 runs
+
+4) mean_acc = the  mean of acc_1, ..., acc_30
+
+5) PCA_in_ex = not used in the paper
+
+6) PCA_gamma = the $\gamma$ parameter (the value is 100 if no kernel is used)
+
+7) PCA_qu_hi = indicates if the CUP (=1) or the HIS (=2) method is used
+
+8) PCA_bins = the $b$ parameter
+
+9) MF_group_comb = the $cmf$ parameter (values from 1 to 255 corresponding to $2^8-1$ combinations)
+
+10) MF_dist = the $sim$ parameter (1=Euclidean, 2=Inner prod., 3=Cosine sim., 4=Pearson)
+
+11) DTW_MF_rv_nv = the $nor$ parameter (1=No, 2=Yes)
+
+12) BL_alg = the $hpt$ parameter (1=PSO, 2=RS, 3=DF)
+
+13) EXP_folds = the $folds$ parameter
+
+14) NN_k = the $k$ parameter
+
+15) time_FE = feature extraction time
+
+16) time_dist = distance computation time
+
+17) time_comp = the time to run hyper-parameter recommendation
+
