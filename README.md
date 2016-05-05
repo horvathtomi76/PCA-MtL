@@ -18,7 +18,7 @@ gzip -c experiment1.sql | split -b 20MiB - exp1_ --numeric-suffixes
 
 gzip -c experiment2.sql | split -b 20MiB - exp2_ --numeric-suffixes
 
-and can be retrieved by a linux command
+and can be retrieved by
 
 cat exp1_* | gunzip -c > experiment1.sql
 
